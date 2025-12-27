@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeFuchs | Premium Webentwicklung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        
+        /* Hintergrund-Glow Animation */
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 0.7; }
+        }
+        .animate-glow { animation: pulse-glow 4s infinite; }
+
+        /* Marquee Animation für die Tech-Leiste */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .marquee-content {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+        /* Mouseover stoppt die Animation (optional) */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 selection:bg-orange-500 selection:text-white overflow-x-hidden">
+
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/5 bg-slate-950/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#" class="flex items-center group">
+                    <span class="text-2xl font-extrabold tracking-tighter text-white">
+                        Code<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600 group-hover:to-orange-400 transition-all">Fuchs</span>.
+                    </span>
+                </a>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#vorteile" class="text-sm font-medium text-slate-300 hover:text-white transition">Warum ich?</a>
+                    <a href="#leistungen" class="text-sm font-medium text-slate-300 hover:text-white transition">Leistungen</a>
+                    <a href="#portfolio" class="text-sm font-medium text-slate-300 hover:text-white transition">Arbeiten</a>
+                    <a href="#kontakt" class="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-orange-600 hover:border-orange-500 text-white text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(234,88,12,0.3)]">
+                        Projekt starten
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden border-b border-white/5">
+        
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full z-0 pointer-events-none">
+            <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-600/20 rounded-full blur-[100px] animate-glow"></div>
+            <div class="absolute top-[20%] left-[20%] w-[400px] h-[400px] bg-indigo-900/20 rounded-full blur-[80px]"></div>
+        </div>
+
+        <div class="max-w-5xl mx-auto px-4 relative z-10 text-center">
+            
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-slate-300 text-sm font-medium mb-8 hover:border-orange-500/50 transition cursor-default shadow-lg shadow-black/50">
+                <span class="flex h-2 w-2 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                </span>
+                <span>Garantiert <span class="text-green-400 font-bold">98/100</span> Google Performance</span>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-white mb-8 leading-tight">
+                Webseiten ohne <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-orange-600">
+                    Umsatz-Limit.
+                </span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Ich programmiere maßgeschneiderte Lösungen für Macher. 
+                Schneller als WordPress, schärfer als Wix. 
+                <span class="block mt-4 text-orange-500 font-bold text-xl md:text-2xl">
+                    Webseiten, die nicht nur gut aussehen, sondern Besucher zu Kunden machen.
+                </span>
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mb-20">
+                <a href="#kontakt" class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-full text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300 transform hover:-translate-y-1">
+                    Jetzt Umsatz steigern
+                    <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                </a>
+                <a href="#portfolio" class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-full text-white bg-slate-900 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all duration-300">
+                    Projekte ansehen
+                </a>
+            </div>
+
+            <div class="relative max-w-4xl mx-auto mt-10">
+                
+                <div class="absolute -top-12 -left-4 md:-left-12 bg-slate-900/60 backdrop-blur-xl border border-white/5 rounded-xl p-4 md:p-6 shadow-2xl transform -rotate-6 z-0 hidden sm:block w-80 md:w-96 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition duration-500">
+                    <div class="flex items-center gap-2 mb-4 border-b border-white/5 pb-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+                        <span class="text-xs text-slate-500 font-mono ml-2">App.tsx</span>
+                    </div>
+                    <div class="space-y-2 font-mono text-xs md:text-sm">
+                        <div class="text-slate-500">// Pure Performance</div>
+                        <div><span class="text-purple-400">const</span> <span class="text-blue-400">loadTime</span> = <span class="text-green-400">0.2s</span>;</div>
+                        <div><span class="text-purple-400">const</span> <span class="text-blue-400">seoRank</span> = <span class="text-green-400">"Top 10"</span>;</div>
+                        <div class="pl-4 text-slate-600">...maximizing revenue</div>
+                        <div class="text-orange-400 font-bold">return <span class="text-yellow-300">&lt;Profit /&gt;</span>;</div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 bg-slate-900 rounded-xl border-4 border-slate-800 shadow-2xl overflow-hidden transform transition hover:scale-[1.01] duration-500 group">
+                    <div class="bg-slate-950 px-4 py-3 flex items-center justify-between border-b border-slate-800">
+                        <div class="flex gap-2">
+                            <div class="w-3 h-3 rounded-full bg-slate-700 group-hover:bg-red-500/80 transition"></div>
+                            <div class="w-3 h-3 rounded-full bg-slate-700 group-hover:bg-yellow-500/80 transition"></div>
+                            <div class="w-3 h-3 rounded-full bg-slate-700 group-hover:bg-green-500/80 transition"></div>
+                        </div>
+                        <div class="bg-slate-900 text-slate-500 text-xs px-3 py-1 rounded-full flex items-center gap-2 border border-slate-800">
+                            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                            dein-neues-business.de
+                        </div>
+                    </div>
+                    <div class="bg-slate-900 relative aspect-video flex flex-col items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-black"></div>
+                        <div class="relative text-center z-10">
+                            <div class="text-4xl md:text-5xl font-bold text-white mb-4">DEIN <span class="text-orange-500">LOGO</span></div>
+                            <div class="h-2 w-32 bg-slate-700 rounded mx-auto mb-2"></div>
+                            <div class="h-2 w-24 bg-slate-700 rounded mx-auto"></div>
+                            <button class="bg-orange-600 text-white text-sm font-bold px-6 py-2 rounded-full mt-6 hover:bg-orange-500 shadow-lg shadow-orange-500/20">Jetzt kaufen</button>
+                        </div>
+                        <div class="absolute -inset-full top-0 block h-full w-1/2 -skew-x-12 bg-gradient-to-r from-transparent to-white opacity-10 group-hover:animate-shine"></div>
+                    </div>
+                </div>
+
+                <div class="absolute -bottom-6 -right-4 md:-right-10 z-20 bg-slate-800/90 backdrop-blur-md border border-slate-700 p-4 rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] flex items-center gap-4 animate-bounce" style="animation-duration: 3s;">
+                    <div class="bg-orange-500/20 p-2 rounded-lg text-orange-400">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <div>
+                        <div class="text-xs text-slate-400 uppercase tracking-wider font-bold">Neue Anfragen</div>
+                        <div class="text-white font-bold text-lg text-orange-400">Steigend 📈</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-slate-950 to-transparent z-20"></div>
+    </section>
+
+    <section class="py-10 border-b border-white/5 bg-slate-950 relative z-30">
+        <div class="text-center mb-6">
+            <p class="text-sm font-semibold text-slate-500 uppercase tracking-widest">Powered by Modern Tech</p>
+        </div>
+        
+        <div class="marquee-container overflow-hidden whitespace-nowrap relative max-w-6xl mx-auto px-4">
+            <div class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-slate-950 to-transparent z-10"></div>
+            <div class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-slate-950 to-transparent z-10"></div>
+
+            <div class="marquee-content inline-flex items-center gap-12 text-slate-400 font-bold text-xl">
+                <span class="flex items-center gap-2"><span class="text-orange-500">⚡</span> HTML5 & CSS3</span>
+                <span class="flex items-center gap-2"><span class="text-sky-400">⚛</span> Astro Framework</span>
+                <span class="flex items-center gap-2"><span class="text-blue-500">🌊</span> Tailwind CSS</span>
+                <span class="flex items-center gap-2"><span class="text-yellow-400">★</span> Google SEO</span>
+                <span class="flex items-center gap-2"><span class="text-green-500">🔒</span> HTTPS Secure</span>
+                <span class="flex items-center gap-2"><span class="text-white">▲</span> Vercel Hosting</span>
+                
+                <span class="flex items-center gap-2"><span class="text-orange-500">⚡</span> HTML5 & CSS3</span>
+                <span class="flex items-center gap-2"><span class="text-sky-400">⚛</span> Astro Framework</span>
+                <span class="flex items-center gap-2"><span class="text-blue-500">🌊</span> Tailwind CSS</span>
+                <span class="flex items-center gap-2"><span class="text-yellow-400">★</span> Google SEO</span>
+                <span class="flex items-center gap-2"><span class="text-green-500">🔒</span> HTTPS Secure</span>
+                <span class="flex items-center gap-2"><span class="text-white">▲</span> Vercel Hosting</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="vorteile" class="py-24 bg-slate-900 relative overflow-hidden border-y border-white/5">
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-orange-600/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                    Schluss mit <br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600">schlechten Kompromissen.</span>
+                </h2>
+                <p class="text-slate-400 text-lg leading-relaxed">
+                    Agenturen sind oft zu teuer und träge. Baukästen wie Wix oder Jimdo sind technisch limitiert. 
+                    Ich biete dir den "Sweetspot": <strong class="text-white">High-End Technik zum fairen Freelancer-Preis.</strong>
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl hover:border-orange-500/40 transition duration-300 group">
+                    <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Google liebt Speed</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Während Baukästen tausende Zeilen unnötigen Code laden, programmiere ich deine Seite "von Hand" schlank und sauber. 
+                        Das Ergebnis: Blitzschnelle Ladezeiten, die dein Google-Ranking pushen.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl hover:border-orange-500/40 transition duration-300 group">
+                    <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mobile Perfection</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Über 70% deiner Besucher kommen via Smartphone. Ich designe nicht "auch für Handy", sondern <span class="italic">zuerst</span> für Handy. 
+                        Deine Seite fühlt sich an wie eine hochwertige App.
+                    </p>
+                </div>
+
+                <div class="bg-slate-900/50 backdrop-blur-sm border border-slate-800 p-8 rounded-2xl hover:border-orange-500/40 transition duration-300 group">
+                    <div class="w-14 h-14 bg-slate-800 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition">
+                        <svg class="w-7 h-7 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 005.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Dein Code-Partner</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Keine anonyme Hotline, kein "Ticket ziehen". Du sprichst direkt mit mir. 
+                        Als Freelancer bin ich flexibel, reagiere schnell und denke unternehmerisch für dein Projekt mit.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 bg-slate-950 relative">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div class="max-w-2xl">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                        Nicht nur reden. <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600">Ergebnisse liefern.</span>
+                    </h2>
+                    <p class="text-slate-400 text-lg">
+                        Hier ist eine Auswahl aktueller Projekte und Design-Konzepte. 
+                        Jedes Projekt ist performance-optimiert und mobile-first entwickelt.
+                    </p>
+                </div>
+                <a href="#kontakt" class="hidden md:inline-flex items-center text-white font-semibold hover:text-orange-500 transition group">
+                    Kostenloses Mockup anfragen
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+
+                <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 hover:border-orange-500/50 transition duration-500">
+                    <div class="aspect-video relative overflow-hidden bg-gradient-to-br from-slate-700 to-slate-800">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-slate-500 font-bold text-4xl opacity-50 group-hover:opacity-100 group-hover:text-white transition duration-500">Maler Meister</span>
+                        </div>
+                        
+                        <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-xs font-bold text-white px-3 py-1 rounded-full border border-white/10">
+                            Handwerk & KMU
+                        </div>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-blue-400 bg-blue-400/10 px-2 py-1 rounded">Tailwind CSS</span>
+                            <span class="text-xs font-medium text-orange-400 bg-orange-400/10 px-2 py-1 rounded">SEO Boost</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-orange-500 transition">Malerbetrieb Müller</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-2">
+                            Relaunch einer veralteten Webseite. Fokus auf lokale SEO ("Maler in Linz") und schnelle Ladezeiten für mobile Nutzer. Conversion-Rate um 150% gesteigert.
+                        </p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-bold text-white border-b border-orange-500 pb-0.5 hover:text-orange-400 transition">
+                            Projekt ansehen (Demo)
+                        </a>
+                    </div>
+                </div>
+
+                <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 hover:border-indigo-500/50 transition duration-500">
+                    <div class="aspect-video relative overflow-hidden bg-gradient-to-br from-slate-800 to-indigo-900">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span class="text-slate-500 font-bold text-4xl opacity-50 group-hover:opacity-100 group-hover:text-white transition duration-500">Tech StartUp</span>
+                        </div>
+                        
+                        <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-xs font-bold text-white px-3 py-1 rounded-full border border-white/10">
+                            SaaS & Web-App
+                        </div>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs font-medium text-purple-400 bg-purple-400/10 px-2 py-1 rounded">Astro JS</span>
+                            <span class="text-xs font-medium text-yellow-400 bg-yellow-400/10 px-2 py-1 rounded">JavaScript</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 group-hover:text-indigo-400 transition">Finance Dashboard</h3>
+                        <p class="text-slate-400 mb-6 line-clamp-2">
+                            Entwicklung einer Landingpage für ein Fintech-Startup. Hochmodernes Design mit Animationen und interaktiven Elementen ohne Performance-Verlust.
+                        </p>
+                        <a href="#kontakt" class="inline-flex items-center text-sm font-bold text-white border-b border-indigo-500 pb-0.5 hover:text-indigo-400 transition">
+                            Projekt ansehen (Demo)
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-10 text-center md:hidden">
+                <a href="#kontakt" class="inline-block border border-slate-700 text-white font-semibold px-6 py-3 rounded-lg hover:bg-slate-800 transition">
+                    Eigene Idee besprechen
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="leistungen" class="py-24 bg-slate-900 relative">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-indigo-900/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-72 h-72 bg-orange-900/10 rounded-full blur-3xl"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                    Keine versteckten Kosten. <br>
+                    <span class="text-orange-500">Klare Pakete.</span>
+                </h2>
+                <p class="text-slate-400 text-lg">
+                    Egal ob digitale Visitenkarte oder komplexe Web-App. 
+                    Ich biete dir sauberen Code zu fairen Freelancer-Konditionen.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-orange-500/30 transition duration-300 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <span class="text-6xl">01</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Basic Starter</h3>
+                    <p class="text-slate-400 mb-6 h-12">Perfekt für kleine Firmen, die endlich professionell online sichtbar sein wollen.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-6">
+                        ab 490 € <span class="text-sm text-slate-500 font-normal">einmalig</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>One-Pager:</strong> Alles Wichtige auf einer Seite</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>Extrem schnell:</strong> Handgecodet (100/100 Speed)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>Rechtssicher:</strong> Inkl. Impressum & Datenschutz</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Mobil optimiert & Google Maps Einbindung</span>
+                        </li>
+                    </ul>
+                    <a href="#kontakt" class="block w-full py-3 rounded-lg border border-slate-700 text-center text-white hover:bg-slate-800 transition">Anfragen</a>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-orange-500/30 transition duration-300 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <span class="text-6xl">02</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Business Pro</h3>
+                    <p class="text-slate-400 mb-6 h-12">Für Unternehmen mit mehreren Dienstleistungen, die mehr Platz brauchen.</p>
+                    <div class="text-3xl font-bold text-orange-500 mb-6">
+                        ab 890 € <span class="text-sm text-slate-500 font-normal">einmalig</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>Bis zu 5 Unterseiten</strong> (Leistungen, Über uns...)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>SEO-Optimiert:</strong> Damit du gefunden wirst</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Bilder-Optimierung (WebP) für Ladezeit</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-green-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Erweiterbares Design-System</span>
+                        </li>
+                    </ul>
+                    <a href="#kontakt" class="block w-full py-3 rounded-lg border border-slate-700 text-center text-white hover:bg-slate-800 transition">Anfragen</a>
+                </div>
+
+                <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-orange-500/50 rounded-2xl p-8 transform md:-translate-y-4 shadow-2xl shadow-orange-900/20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">BELIEBT</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">WordPress Custom</h3>
+                    <p class="text-slate-300 mb-6 h-12">Volle Kontrolle. Du willst Texte und Bilder selbst ändern? Das ist dein Paket.</p>
+                    <div class="text-3xl font-bold text-orange-400 mb-6">
+                        ab 1.490 € <span class="text-sm text-slate-400 font-normal">einmalig</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-slate-200">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>Individuelles Theme:</strong> Kein 0815-Template</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span><strong>Admin-Bereich:</strong> Inhalte einfach selbst pflegen</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Inkl. Video-Anleitung & Sicherheits-Setup</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-orange-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Automatisches Backup-System</span>
+                        </li>
+                    </ul>
+                    <a href="#kontakt" class="block w-full py-3 rounded-lg bg-orange-600 text-center text-white font-bold hover:bg-orange-700 transition shadow-lg shadow-orange-600/20">Jetzt anfragen</a>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-8 hover:border-indigo-500/50 transition duration-300 group relative overflow-hidden">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
+                        <span class="text-6xl">04</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Custom Web-App</h3>
+                    <p class="text-slate-400 mb-6 h-12">Buchungssysteme, Kalkulatoren oder Datenbanken. Individuelle Software.</p>
+                    
+                    <div class="text-3xl font-bold text-indigo-300 mb-6">
+                        ab 2.000 € <span class="text-sm text-slate-500 font-normal">nach Aufwand</span>
+                    </div>
+                    
+                    <ul class="space-y-4 mb-8 text-slate-300">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-indigo-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            <span><strong>Fullstack Entwicklung:</strong> Java/JS Backend</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-indigo-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Datenbank-Anbindung & Login-Bereiche</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-indigo-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Maßgeschneiderte Logik für dein Business</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-indigo-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Skalierbare Architektur</span>
+                        </li>
+                    </ul>
+                    <a href="#kontakt" class="block w-full py-3 rounded-lg border border-slate-700 text-center text-white hover:bg-slate-800 transition">Individuelles Angebot</a>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                <p class="text-slate-500 text-sm">
+                    * Alle Preise sind Endpreise (Kleinunternehmerregelung), keine MwSt-Ausweisung nötig. <br>
+                    Hosting-Kosten (ca. 5-10€/Monat) werden direkt vom Provider abgerechnet.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="ueber-mich" class="py-24 bg-slate-950 relative overflow-hidden border-t border-white/5">
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-gradient-to-r from-orange-500 to-indigo-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition duration-500"></div>
+                    
+                    <div class="relative bg-slate-900 rounded-xl overflow-hidden border border-slate-700 aspect-[4/5] shadow-2xl">
+                        <div class="absolute inset-0 bg-slate-800 flex items-center justify-center">
+                            <svg class="w-32 h-32 text-slate-700" fill="currentColor" viewBox="0 0 24 24"><path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                            <span class="absolute bottom-10 text-slate-500 font-mono text-sm">&lt;Dein_Profilbild.jpg&gt;</span>
+                        </div>
+                        
+                        <div class="absolute bottom-4 right-4 bg-slate-950/90 backdrop-blur border border-orange-500/30 px-4 py-2 rounded-lg shadow-lg">
+                            <p class="text-orange-400 font-bold text-sm">CodeFuchs</p>
+                            <p class="text-slate-400 text-xs">Fullstack Developer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-orange-500 uppercase bg-orange-500/10 rounded-full border border-orange-500/20">
+                        Behind the scenes
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">
+                        Nicht noch eine <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-cyan-400">anonyme Agentur.</span>
+                    </h2>
+                    
+                    <div class="space-y-6 text-slate-400 text-lg leading-relaxed">
+                        <p>
+                            Hi, ich bin <span class="text-white font-semibold">[Dein Vorname]</span>. 
+                            Während große Agenturen Meetings über Meetings halten, sitze ich bereits am Code und baue Lösungen.
+                        </p>
+                        <p>
+                            Als angehender Fullstack-Entwickler beherrsche ich nicht nur das "Klickibunti" im Frontend, sondern verstehe die Logik dahinter (Java, Datenbanken, Systemarchitektur).
+                        </p>
+                        <p>
+                            <strong>Warum mit mir arbeiten?</strong> Weil ich hungrig bin. Ich will, dass mein Portfolio glänzt – und das geht nur, wenn deine Webseite perfekt wird. Du bekommst keine Massenware, sondern handwerkliche Qualität und einen direkten Ansprechpartner.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6 mt-10 border-t border-slate-800 pt-8">
+                        <div>
+                            <div class="text-2xl font-bold text-white mb-1">100%</div>
+                            <div class="text-sm text-slate-500">Transparenz & Code-Qualität</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl font-bold text-white mb-1">Direct Line</div>
+                            <div class="text-sm text-slate-500">Keine Warteschleifen</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="py-24 relative bg-slate-950">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-950 to-indigo-950/20"></div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-white mb-4">Lass uns starten 🚀</h2>
+                <p class="text-slate-400">
+                    Erzähl mir kurz von deiner Idee. Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung – kostenlos und unverbindlich.
+                </p>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Dein Name</label>
+                            <input type="text" placeholder="Max Mustermann" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-400 mb-2">Deine E-Mail</label>
+                            <input type="email" placeholder="max@firma.de" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Worum geht es?</label>
+                        <select class="w-full bg-slate-950 border border-slate-800 text-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
+                            <option>Neue Webseite (Basic/Business)</option>
+                            <option>Web-App / Individuelle Software</option>
+                            <option>WordPress Projekt</option>
+                            <option>Ich habe eine Frage</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-medium text-slate-400 mb-2">Deine Nachricht</label>
+                        <textarea rows="4" placeholder="Kurze Beschreibung deines Vorhabens..." class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white font-bold text-lg py-4 rounded-lg hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] transition transform hover:-translate-y-1">
+                        Kostenlose Anfrage senden
+                    </button>
+                    
+                    <p class="text-center text-xs text-slate-600 mt-4">
+                        Deine Daten werden streng vertraulich behandelt. Keine Weitergabe an Dritte.
+                    </p>
+                </form>
+            </div>
+
+            <div class="mt-12 text-center space-y-2">
+                <p class="text-slate-500">Lieber direkt schreiben?</p>
+                <a href="mailto:hallo@codefuchs.at" class="text-xl font-bold text-white hover:text-orange-500 transition">hallo@codefuchs.at</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            
+            <div class="text-slate-500">
+                &copy; 2025 CodeFuchs Webentwicklung. <br class="md:hidden">Made with passion & caffeine.
+            </div>
+
+            <div class="flex gap-8">
+                <a href="#" class="text-slate-400 hover:text-white transition">Impressum</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">Datenschutz</a>
+                <a href="#" class="text-slate-400 hover:text-white transition">AGB</a>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
