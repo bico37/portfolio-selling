@@ -35,6 +35,8 @@
 
     <meta name="theme-color" content="#1e293b">
 
+    
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -95,6 +97,8 @@
             overscroll-behavior-x: none;
         }
     </style>
+
+    
 </head>
 <body class="bg-slate-950 text-slate-200 selection:bg-orange-500 selection:text-white overflow-x-hidden">
 
@@ -661,4 +665,139 @@
     </footer>
 
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        // 1. Plugins registrieren
+        gsap.registerPlugin(ScrollTrigger);
+
+        // --- A. HERO SECTION SEQUENZ (Beim Laden) ---
+        const heroTl = gsap.timeline({ defaults: { ease: "power4.out", duration: 1.2 } });
+
+        // Badge oben fliegt rein
+        heroTl.from(".inline-flex.rounded-full", {
+            y: -50,
+            opacity: 0,
+            duration: 1
+        })
+        // Headline Wörter kommen von unten (Masking Effekt simuliert)
+        .from("h1", {
+            y: 100,
+            opacity: 0,
+            skewY: 7, // Macht den Text "elastisch" beim Erscheinen
+            duration: 1.5
+        }, "-=0.8")
+        // Subtext
+        .from("p.text-lg", {
+            y: 30,
+            opacity: 0,
+            duration: 1
+        }, "-=1.2")
+        // Buttons
+        .from(".flex.flex-col.sm\\:flex-row", {
+            y: 20,
+            opacity: 0,
+            duration: 1
+        }, "-=1")
+        // Das Laptop/Mockup Visual (Scale Effekt)
+        .from(".relative.max-w-4xl", {
+            scale: 0.8,
+            opacity: 0,
+            y: 50,
+            duration: 1.5,
+            ease: "expo.out" // Sehr sanftes Ende
+        }, "-=1");
+
+
+        // --- B. SCROLL REVEALS (Generell für alle Sektionen) ---
+        // Wir animieren die Überschriften jeder Sektion, wenn sie ins Bild kommen
+        gsap.utils.toArray("section h2").forEach(header => {
+            gsap.from(header, {
+                scrollTrigger: {
+                    trigger: header,
+                    start: "top 85%", // Startet, wenn das Element im unteren Drittel ist
+                    toggleActions: "play none none reverse" // Spielt ab beim Runterscrollen, reversed beim Hochscrollen
+                },
+                y: 50,
+                opacity: 0,
+                duration: 1,
+                ease: "power3.out"
+            });
+        });
+
+
+        // --- C. BATCH ANIMATION FÜR GRIDS (Pakete & Portfolio) ---
+        // Das sorgt dafür, dass die Karten nacheinander reinfliegen (Stagger)
+        
+        // 1. Für die Vorteile-Icons
+        ScrollTrigger.batch("#vorteile .group", {
+            start: "top 90%",
+            onEnter: batch => gsap.to(batch, {
+                opacity: 1, 
+                y: 0, 
+                stagger: 0.2, 
+                duration: 0.8, 
+                ease: "back.out(1.7)" // Leichter "Bounce" Effekt
+            }),
+            onLeaveBack: batch => gsap.to(batch, { opacity: 0, y: 50 }) // Ausblenden beim Hochscrollen
+        });
+        
+        // Initiale CSS-Werte für Batch-Elemente setzen (damit sie nicht kurz sichtbar sind)
+        gsap.set("#vorteile .group", { opacity: 0, y: 50 });
+
+
+        // 2. Für das Portfolio & Pakete (Grid Items)
+        // Wir suchen alle direkten Kinder der Grids in diesen Sektionen
+        const cards = gsap.utils.toArray("#portfolio .grid > div, #leistungen .grid > div");
+        
+        cards.forEach((card, i) => {
+            gsap.from(card, {
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 85%",
+                },
+                y: 80,
+                opacity: 0,
+                duration: 1,
+                delay: i % 2 * 0.1, // Kleiner Trick für abwechselnde Verzögerung
+                ease: "power3.out"
+            });
+        });
+
+
+        // --- D. PARALLAX BACKGROUND (High-End Tiefe) ---
+        // Die bunten Blobs im Hintergrund bewegen sich langsamer als der Scroll
+        // Sucht alle Elemente mit "blur-3xl" (deine Hintergrundlichter)
+        gsap.utils.toArray(".blur-3xl").forEach((blob, i) => {
+            gsap.to(blob, {
+                scrollTrigger: {
+                    trigger: "body",
+                    start: "top top",
+                    end: "bottom bottom",
+                    scrub: 1.5 // Weiches Mitlaufen
+                },
+                y: (i + 1) * 150, // Unterschiedliche Geschwindigkeiten für mehr Tiefe
+                rotation: i % 2 === 0 ? 45 : -45, // Leichte Drehung
+                ease: "none"
+            });
+        });
+
+
+        // --- E. MARQUEE ANIMATION OPTIMIERUNG ---
+        // Dein CSS Marquee ist okay, aber GSAP ist flüssiger.
+        // Wir lassen das CSS drin, aber nutzen GSAP für einen Fade-In der Leiste
+        gsap.from(".marquee-container", {
+            scrollTrigger: {
+                trigger: ".marquee-container",
+                start: "top 95%"
+            },
+            opacity: 0,
+            scaleX: 0.8,
+            duration: 1.5,
+            ease: "expo.out"
+        });
+
+    </script>
 </html>
