@@ -603,21 +603,25 @@
             </div>
 
             <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 md:p-12 shadow-2xl">
-                <form class="space-y-6">
+                <form action="https://formspree.io/f/mykynenn" method="POST" class="space-y-6">
+                    <input type="hidden" name="_next" value="https://onyx-digital.at/success.html">
+                    
+                    <input type="text" name="_gotcha" style="display:none" />
+
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-slate-400 mb-2">Ihr Name</label>
-                            <input type="text" placeholder="Max Mustermann" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
+                            <input type="text" name="Name" required placeholder="Max Mustermann" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-slate-400 mb-2">Ihre E-Mail</label>
-                            <input type="email" placeholder="max@firma.at" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
+                            <input type="email" name="Email" required placeholder="max@firma.at" class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600">
                         </div>
                     </div>
 
                     <div>
                         <label class="block text-sm font-medium text-slate-400 mb-2">Worum geht es?</label>
-                        <select class="w-full bg-slate-950 border border-slate-800 text-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
+                        <select name="Kategorie" class="w-full bg-slate-950 border border-slate-800 text-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition">
                             <option>Neue Webseite (Business Starter/Pro)</option>
                             <option>Web-App / Individuelle Software</option>
                             <option>WordPress Projekt</option>
@@ -627,7 +631,7 @@
 
                     <div>
                         <label class="block text-sm font-medium text-slate-400 mb-2">Ihre Nachricht</label>
-                        <textarea rows="4" placeholder="Kurze Beschreibung Ihres Vorhabens..." class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600"></textarea>
+                        <textarea name="Nachricht" rows="4" required placeholder="Kurze Beschreibung Ihres Vorhabens..." class="w-full bg-slate-950 border border-slate-800 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition placeholder-slate-600"></textarea>
                     </div>
 
                     <button type="submit" class="w-full bg-gradient-to-r from-orange-600 to-amber-600 text-white font-bold text-lg py-4 rounded-lg hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] transition transform hover:-translate-y-1">
