@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
 
+# Verhindert, dass die Success-Seite bei Google auftaucht
+Disallow: /pages/success.html
+
+# Link zu deiner professionellen Sitemap
 Sitemap: https://onyx-digital.at/sitemap.xml

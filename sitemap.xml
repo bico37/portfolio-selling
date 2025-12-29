@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://onyx-digital.at/</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://onyx-digital.at/</loc>
-  <lastmod>2025-12-28T19:00:14+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+  <url>
+    <loc>https://onyx-digital.at/pages/impressum.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-<url>
-  <loc>https://onyx-digital.at/impressum.html</loc>
-  <lastmod>2025-12-28T19:00:14+00:00</lastmod>
-  <priority>0.30</priority>
-</url>
+  <url>
+    <loc>https://onyx-digital.at/pages/datenschutz.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-<url>
-  <loc>https://onyx-digital.at/datenschutz.html</loc>
-  <lastmod>2025-12-28T19:00:14+00:00</lastmod>
-  <priority>0.30</priority>
-</url>
-
-<url>
-  <loc>https://onyx-digital.at/agb.html</loc>
-  <lastmod>2025-12-28T19:00:14+00:00</lastmod>
-  <priority>0.30</priority>
-</url>
+  <url>
+    <loc>https://onyx-digital.at/pages/agb.html</loc>
+    <lastmod>2025-12-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
 </urlset>
