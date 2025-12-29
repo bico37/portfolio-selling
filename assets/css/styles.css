@@ -45,3 +45,12 @@ ol {
 li {
   margin-bottom: 0.5rem;
 }
+
+/* Feste Seitenverhältnisse für zentrale Bilder zur Reduktion von CLS */
+.hero-logo-img {
+  aspect-ratio: 400 / 56;
+}
+
+.about-me-img {
+  aspect-ratio: 800 / 1063;
+}
