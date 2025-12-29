@@ -1,0 +1,47 @@
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Hintergrund-Glow Animation */
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.7; }
+}
+
+.animate-glow {
+  animation: pulse-glow 4s infinite;
+}
+
+/* Marquee Animation für die Tech-Leiste */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-content {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+/* Mouseover stoppt die Animation (optional) */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+}
+
+/* AGB: Nummerierte Listen Formatierung */
+ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
