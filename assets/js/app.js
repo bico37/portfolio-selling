@@ -132,7 +132,7 @@ if (contactForm && submitBtn) {
 
       if (response.ok) {
         contactForm.reset();
-        window.location.href = "success.html";
+        window.location.href = "./pages/success.html";
       } else {
         alert("Hoppla! Da gab es ein Problem. Bitte versuchen Sie es erneut.");
         submitBtn.innerText = originalBtnText;
