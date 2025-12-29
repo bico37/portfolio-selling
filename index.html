@@ -42,6 +42,10 @@
 
     <style>
         h1 { font-size: 2.25rem; } /* Simuliert die Tailwind-Größe für Google */
+        /* Verhindert den weißen Blitz und das ungestylte Layout */
+        html { background-color: #020617; } /* Deine Hintergrundfarbe slate-950 */
+        body { opacity: 0; transition: opacity 0.2s ease-in; }
+        body.loaded { opacity: 1; }
     </style>
 
     <script type="application/ld+json">
@@ -661,6 +665,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
         <script src="./assets/js/app.js" defer></script>
+
+        <script>
+            window.addEventListener('load', function() {
+                document.body.classList.add('loaded');
+            });
+            // Fallback: Falls 'load' zu lange dauert, nach 500ms erzwingen
+            setTimeout(() => document.body.classList.add('loaded'), 500);
+        </script>
     
 </body>
 
