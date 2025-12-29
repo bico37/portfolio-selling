@@ -122,7 +122,7 @@ if (contactForm && submitBtn) {
     const formData = new FormData(contactForm);
 
     try {
-      const response = await fetch("https://formspree.io/f/mykynenn", {
+      const response = await fetch("https://formspree.io/f/mlgeozzr", {
         method: "POST",
         body: formData,
         headers: {
