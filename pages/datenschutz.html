@@ -6,7 +6,8 @@
     <title>Datenschutz | CodeFuchs</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preload" href="../assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
 </head>
 <body class="bg-slate-950 text-slate-300 selection:bg-orange-500 selection:text-white">
 
@@ -65,7 +66,7 @@
                 <p>
                     Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
                 </p>
-                <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-400 text-sm">
+                <ul class="list-disc pl-5 mt-2 space-y-1 text-slate-200 text-sm">
                     <li>Browsertyp und Browserversion</li>
                     <li>Verwendetes Betriebssystem</li>
                     <li>Referrer URL</li>

@@ -6,7 +6,8 @@
     <title>Anfrage erhalten | Onyx Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="preload" href="../assets/css/styles.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../assets/css/styles.css"></noscript>
 </head>
 <body class="bg-slate-950 text-slate-300 flex flex-col min-h-screen">
 
@@ -35,7 +36,7 @@
                 Anfrage <span class="text-orange-500">erhalten!</span>
             </h1>
             
-            <p class="text-xl text-slate-400 mb-10 leading-relaxed">
+            <p class="text-xl text-slate-200 mb-10 leading-relaxed">
                 Vielen Dank für Ihr Vertrauen. Ich habe Ihre Nachricht erhalten und werde mich innerhalb der nächsten **24 Stunden** persönlich bei Ihnen melden.
             </p>
 
