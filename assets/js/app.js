@@ -1,12 +1,12 @@
 /**
  * ═══════════════════════════════════════════════════════════════════════════════
- * ONYX DIGITAL - Premium Animation Engine
+ * BERGMAIR.DIGITAL - Premium Animation Engine
  * ═══════════════════════════════════════════════════════════════════════════════
  * 
  * High-End Agency Animation Framework
  * Optimiert für Desktop-Impact & Mobile-Performance
  * 
- * @author Onyx Digital
+ * @author Bergmair.Digital
  * @version 2.0.0
  * @requires GSAP 3.12+, ScrollTrigger
  * 
@@ -288,7 +288,7 @@
     }); // Ende gsap.context
 
     // Speichere Context für späteren Cleanup
-    window.onyxAnimationContext = ctx;
+    window.bergmairAnimationContext = ctx;
 
     // Body loaded class setzen
     requestAnimationFrame(() => {
@@ -1122,9 +1122,9 @@
   // ═══════════════════════════════════════════════════════════════════════════
 
   function cleanup() {
-    if (window.onyxAnimationContext) {
-      window.onyxAnimationContext.revert();
-      window.onyxAnimationContext = null;
+    if (window.bergmairAnimationContext) {
+      window.bergmairAnimationContext.revert();
+      window.bergmairAnimationContext = null;
     }
     
     // Restore split text
@@ -1153,7 +1153,7 @@
   window.addEventListener('beforeunload', cleanup);
 
   // Expose cleanup function globally for SPA navigation
-  window.onyxCleanup = cleanup;
+  window.bergmairCleanup = cleanup;
 
 })();
 
