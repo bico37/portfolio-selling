@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="de-AT" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Konzeptstudie Fitnessstudio-Website mit Online-Anmeldung | Bergmair.Digital</title>
+    <meta name="description" content="Designkonzept von Bergmair.Digital: zwei eigenständige Fitnessstudio-Marken auf einem gemeinsamen Designsystem, mit Tarifrechner, Online-Anmeldung in vier Schritten und Verwaltungs-Demo. Analyse, UX/UI und Frontend.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Bergmair.Digital">
+    <link rel="canonical" href="https://bergmair-digital.at/referenzen/fitnessstudio-konzept">
+
+    <meta property="og:type" content="article">
+    <meta property="og:locale" content="de_AT">
+    <meta property="og:title" content="Konzeptstudie: Zwei Studios, ein Designsystem | Bergmair.Digital">
+    <meta property="og:description" content="Designkonzept: zwei eigenständige Studiomarken auf einem Designsystem, mit Online-Anmeldung und Verwaltungs-Demo.">
+    <meta property="og:url" content="https://bergmair-digital.at/referenzen/fitnessstudio-konzept">
+    <meta property="og:site_name" content="Bergmair.Digital">
+    <meta property="og:image" content="https://bergmair-digital.at/assets/img/referenzen/fitnessstudio-konzept/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <meta name="theme-color" content="#1e293b">
+
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/case-study.css">
+    <link rel="preload" as="image" href="/assets/img/referenzen/fitnessstudio-konzept/hero-1440.webp" imagesrcset="/assets/img/referenzen/fitnessstudio-konzept/hero-960.webp 960w, /assets/img/referenzen/fitnessstudio-konzept/hero-1440.webp 1440w" imagesizes="(min-width: 1024px) 896px, 100vw">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>html { background-color: #020617; }</style>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "Konzeptstudie: Zwei Studios, ein Designsystem",
+        "description": "Designkonzept: zwei eigenständige Fitnessstudio-Marken auf einem gemeinsamen Designsystem, mit Online-Anmeldung und Verwaltungs-Demo.",
+        "creator": { "@type": "Organization", "name": "Bergmair.Digital", "url": "https://bergmair-digital.at" },
+        "dateCreated": "2026",
+        "inLanguage": "de-AT",
+        "url": "https://bergmair-digital.at/referenzen/fitnessstudio-konzept"
+    }
+    </script>
+</head>
+<body class="bg-slate-950 text-slate-200 selection:bg-orange-500 selection:text-white overflow-x-hidden">
+
+    <a href="#inhalt" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:rounded-lg focus:bg-orange-600 focus:px-4 focus:py-2 focus:text-white">Zum Inhalt springen</a>
+
+    <nav class="fixed w-full z-50 top-0 start-0 border-b border-white/5 bg-slate-950/80 backdrop-blur-md" aria-label="Hauptnavigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="/" class="flex items-center group">
+                    <span class="text-2xl font-extrabold tracking-tighter text-white">
+                        Bergmair<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-600 group-hover:to-orange-400 transition-all">.Digital</span>
+                    </span>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/#vorteile" class="text-sm font-medium text-slate-300 hover:text-white transition">Kompetenz</a>
+                    <a href="/#leistungen" class="text-sm font-medium text-slate-300 hover:text-white transition">Lösungen</a>
+                    <a href="/#portfolio" class="text-sm font-medium text-white transition" aria-current="page">Referenzen</a>
+                    <a href="/#kontakt" class="px-5 py-2.5 rounded-full bg-white/5 border border-white/10 hover:bg-orange-600 hover:border-orange-500 text-white text-sm font-semibold transition-all duration-300 hover:shadow-[0_0_15px_rgba(234,88,12,0.3)]">
+                        Erstgespräch vereinbaren
+                    </a>
+                </div>
+                <a href="/#portfolio" class="md:hidden text-sm font-medium text-white hover:text-orange-500 transition flex items-center gap-2">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    Referenzen
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main id="inhalt">
+
+        <!-- 1 Hero -->
+        <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-24 overflow-hidden border-b border-white/5">
+            <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+                <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-orange-600/15 rounded-full blur-[100px]"></div>
+            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <nav aria-label="Brotkrumen" class="mb-8 text-sm text-slate-400">
+                    <a href="/#portfolio" class="hover:text-white transition">Referenzen</a>
+                    <span aria-hidden="true" class="mx-2 text-slate-600">/</span>
+                    <span class="text-slate-300">Konzeptstudie Fitnessstudios</span>
+                </nav>
+
+                <div class="grid lg:grid-cols-12 gap-12 items-end">
+                    <div class="lg:col-span-7">
+                        <p class="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-bold tracking-wider text-slate-950 uppercase bg-orange-500 rounded-full">
+                            Designkonzept
+                        </p>
+                        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.05] mb-6">
+                            Zwei Studios,<br>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-500 to-orange-600">ein Designsystem.</span>
+                        </h1>
+                        <p class="text-lg md:text-xl text-slate-200 leading-relaxed max-w-2xl">
+                            Konzeptstudie: zwei eigenständige Studiomarken auf einem gemeinsamen Designsystem – Tarife vergleichbar, Mitgliedschaft komplett online abschließbar. Entstanden aus Eigeninitiative, keine offizielle Website der Studios.
+                        </p>
+                    </div>
+                    <dl class="lg:col-span-5 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-slate-800 bg-slate-800 text-sm">
+                        <div class="bg-slate-900 p-5">
+                            <dt class="text-slate-500 text-xs uppercase tracking-wider font-semibold mb-1">Umfang</dt>
+                            <dd class="text-white">12 Seitentypen, Anmeldung in 4 Schritten, Verwaltungs-Demo</dd>
+                        </div>
+                        <div class="bg-slate-900 p-5">
+                            <dt class="text-slate-500 text-xs uppercase tracking-wider font-semibold mb-1">Rolle</dt>
+                            <dd class="text-white">Analyse, Konzept, UX/UI-Design, Frontend</dd>
+                        </div>
+                        <div class="bg-slate-900 p-5">
+                            <dt class="text-slate-500 text-xs uppercase tracking-wider font-semibold mb-1">Tools</dt>
+                            <dd class="text-white">Next.js, React, TypeScript, Tailwind CSS, Playwright</dd>
+                        </div>
+                        <div class="bg-slate-900 p-5">
+                            <dt class="text-slate-500 text-xs uppercase tracking-wider font-semibold mb-1">Jahr</dt>
+                            <dd class="text-white">2026</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <div class="mt-10 flex flex-col sm:flex-row gap-4">
+                    <a href="#leinwand" class="inline-flex justify-center items-center px-7 py-3.5 text-base font-bold rounded-full text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300">
+                        Alle Screens ansehen
+                    </a>
+                    <a href="https://yellow-alive-prototype.vercel.app/" target="_blank" rel="noopener" class="inline-flex justify-center items-center gap-2 px-7 py-3.5 text-base font-bold rounded-full text-white bg-slate-900 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all duration-300">
+                        Interaktive Demo öffnen
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5h5v5M19 5l-8 8M5 7v12h12"></path></svg>
+                        <span class="sr-only">(neuer Tab)</span>
+                    </a>
+                </div>
+
+                <figure class="mt-14 max-w-5xl mx-auto">
+                    <div class="bg-slate-900 rounded-xl border-4 border-slate-800 shadow-2xl overflow-hidden">
+                        <div class="bg-slate-950 px-4 py-3 flex items-center gap-4 border-b border-slate-800">
+                            <div class="flex gap-2" aria-hidden="true">
+                                <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                                <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                                <span class="w-3 h-3 rounded-full bg-slate-700"></span>
+                            </div>
+                            <span class="truncate bg-slate-900 text-slate-500 text-xs px-3 py-1 rounded-full border border-slate-800">yellow-alive-prototype.vercel.app</span>
+                        </div>
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/hero-1440.webp" srcset="/assets/img/referenzen/fitnessstudio-konzept/hero-960.webp 960w, /assets/img/referenzen/fitnessstudio-konzept/hero-1440.webp 1440w" sizes="(min-width: 1024px) 1024px, 100vw" width="1440" height="900" fetchpriority="high" alt="Startseite des Konzepts mit zwei großen Karten zur Studiowahl Linz und Perg" class="block w-full h-auto">
+                    </div>
+                    <figcaption class="mt-3 text-center text-sm text-slate-500">Startseite (Desktop). Konzeptentwurf, nicht die Website der Studios.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- 2 Leinwand -->
+        <section id="leinwand" class="py-20 lg:py-28 bg-slate-900 border-b border-white/5" aria-labelledby="leinwand-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+                    <div class="max-w-2xl">
+                        <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Leinwand</p>
+                        <h2 id="leinwand-titel" class="text-3xl md:text-5xl font-bold text-white mb-4">Alle Screens auf einen Blick</h2>
+                        <p class="text-slate-300 text-lg">Jeder Screen als Artboard, Desktop und Smartphone nebeneinander. Ein Klick öffnet die interaktive Demo genau dieser Seite.</p>
+                    </div>
+                    <p class="hidden md:block text-sm text-slate-400 max-w-xs">Ziehen zum Verschieben · <kbd class="font-sans text-slate-300">Strg</kbd>/<kbd class="font-sans text-slate-300">⌘</kbd> + Scrollen zum Zoomen · Pfeiltasten und <kbd class="font-sans text-slate-300">+</kbd>/<kbd class="font-sans text-slate-300">−</kbd> per Tastatur</p>
+                </div>
+
+                <!-- Editor (ab 768 px) -->
+                <div data-cs-editor class="hidden md:flex flex-col h-[78vh] min-h-[560px] max-h-[920px] overflow-hidden rounded-2xl border border-slate-700 bg-slate-950 shadow-2xl">
+                    <div class="flex h-12 shrink-0 items-center justify-between gap-4 border-b border-slate-800 bg-slate-900 px-3" role="toolbar" aria-label="Leinwand-Steuerung">
+                        <div class="flex min-w-0 items-center gap-3">
+                            <svg class="h-5 w-5 shrink-0 text-orange-500" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>
+                            <p class="truncate text-sm font-semibold text-white">Konzept · Yellow Fitness &amp; Alive Perg</p>
+                            <span class="hidden lg:inline rounded bg-orange-500/15 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-wider text-orange-400">Designkonzept</span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <button type="button" data-cs-zoom="out" class="flex h-8 w-8 items-center justify-center rounded text-slate-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" aria-label="Verkleinern">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+                            </button>
+                            <button type="button" data-cs-zoom="reset" class="h-8 min-w-[4rem] rounded px-2 text-xs font-semibold tabular-nums text-slate-200 hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" aria-label="Zoom auf 100 % setzen"><span data-cs-zoom-label aria-live="polite">100 %</span></button>
+                            <button type="button" data-cs-zoom="in" class="flex h-8 w-8 items-center justify-center rounded text-slate-300 hover:bg-white/10 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" aria-label="Vergrößern">
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5v14"/></svg>
+                            </button>
+                            <button type="button" data-cs-zoom="fit" class="ml-1 h-8 rounded border border-slate-700 px-3 text-xs font-semibold text-slate-200 hover:border-slate-500 hover:bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500">Einpassen</button>
+                            <a href="https://yellow-alive-prototype.vercel.app/" target="_blank" rel="noopener" class="ml-2 hidden lg:inline-flex h-8 items-center gap-1.5 rounded bg-orange-600 px-3 text-xs font-bold text-white hover:bg-orange-500 transition">Live-Demo<svg class="h-3.5 w-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M5 7v12h12"/></svg><span class="sr-only">(neuer Tab)</span></a>
+                        </div>
+                    </div>
+                    <div class="flex min-h-0 flex-1">
+                        <nav class="hidden lg:block w-60 shrink-0 overflow-y-auto border-r border-slate-800 bg-slate-900 px-2 pb-4" aria-label="Ebenen">
+                            <p class="px-2 pt-3 text-xs font-semibold text-white">Ebenen</p>
+                            <ul>
+<li><p class="px-2 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Website</p><ul><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d01" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">01 — Startseite <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m01" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M01 — Startseite <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d02" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">02 — Studio Linz <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m02" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M02 — Studio Linz <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d03" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">03 — Studio Perg <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m03" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M03 — Studio Perg <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d04" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">04 — Mitgliedschaft <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m04" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M04 — Mitgliedschaft <span class="text-slate-600">· Mobile</span></span></button></li></ul></li>
+<li><p class="px-2 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Online-Anmeldung</p><ul><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d05" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">05 — Anmeldung · Tarif <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m05" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M05 — Anmeldung · Tarif <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d06" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">06 — Anmeldung · Daten <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m06" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M06 — Anmeldung · Daten <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d07" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">07 — Anmeldung · Bank <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m07" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M07 — Anmeldung · Bank <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d08" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">08 — Anmeldung · Prüfen <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m08" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M08 — Anmeldung · Prüfen <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d09" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">09 — Anmeldung · Erfolg <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m09" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M09 — Anmeldung · Erfolg <span class="text-slate-600">· Mobile</span></span></button></li></ul></li>
+<li><p class="px-2 pt-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-slate-500">Verwaltung & System</p><ul><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d10" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">10 — Verwaltung · Liste <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m10" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M10 — Verwaltung · Liste <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d11" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">11 — Verwaltung · Detail <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m11" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M11 — Verwaltung · Detail <span class="text-slate-600">· Mobile</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-d12" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><span class="truncate">12 — 404 <span class="text-slate-600">· Desktop</span></span></button></li><li><button type="button" class="cs-layer flex w-full items-center gap-2 rounded px-2 py-1.5 text-left text-xs text-slate-400 hover:bg-white/5 hover:text-white transition" data-cs-target="ab-m12" aria-current="false"><svg class="cs-layer-icon h-3.5 w-3.5 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10v20H7zM11 18h2"/></svg><span class="truncate">M12 — 404 <span class="text-slate-600">· Mobile</span></span></button></li></ul></li>
+                            </ul>
+                        </nav>
+                        <div data-cs-viewport class="cs-viewport min-w-0 flex-1" tabindex="0" role="region" aria-label="Leinwand mit allen Screens. Pfeiltasten verschieben, Plus und Minus zoomen, 1 passt alles ein.">
+                            <div data-cs-world class="cs-world">
+<section class="cs-section" aria-label="Website"><span class="cs-section-title" aria-hidden="true">Website</span>
+<div class="cs-row">
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d01">
+  <figcaption class="cs-label">01 — Startseite (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d01.webp" data-cs-label="01 — Startseite (Desktop)" aria-label="01 — Startseite (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d01.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Startseite mit Studiowahl Linz und Perg, Tarifen und Öffnungszeiten (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m01">
+  <figcaption class="cs-label">M01 — Startseite (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m01.webp" data-cs-label="M01 — Startseite (Mobile)" aria-label="M01 — Startseite (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m01.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Startseite mit Studiowahl Linz und Perg, Tarifen und Öffnungszeiten (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d02">
+  <figcaption class="cs-label">02 — Studio Linz (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/linz" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d02.webp" data-cs-label="02 — Studio Linz (Desktop)" aria-label="02 — Studio Linz (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d02.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Studioseite Linz mit Galerie, Ausstattung, Öffnungszeiten und Tarifen (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m02">
+  <figcaption class="cs-label">M02 — Studio Linz (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/linz" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m02.webp" data-cs-label="M02 — Studio Linz (Mobile)" aria-label="M02 — Studio Linz (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m02.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Studioseite Linz mit Galerie, Ausstattung, Öffnungszeiten und Tarifen (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d03">
+  <figcaption class="cs-label">03 — Studio Perg (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/perg" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d03.webp" data-cs-label="03 — Studio Perg (Desktop)" aria-label="03 — Studio Perg (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d03.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Studioseite Perg im Petrol-Theme mit Galerie, Ausstattung und Tarifen (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m03">
+  <figcaption class="cs-label">M03 — Studio Perg (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/perg" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m03.webp" data-cs-label="M03 — Studio Perg (Mobile)" aria-label="M03 — Studio Perg (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m03.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Studioseite Perg im Petrol-Theme mit Galerie, Ausstattung und Tarifen (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d04">
+  <figcaption class="cs-label">04 — Mitgliedschaft (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/mitgliedschaft" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d04.webp" data-cs-label="04 — Mitgliedschaft (Desktop)" aria-label="04 — Mitgliedschaft (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d04.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Tarifrechner und Tarifvergleich beider Studios (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m04">
+  <figcaption class="cs-label">M04 — Mitgliedschaft (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/mitgliedschaft" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m04.webp" data-cs-label="M04 — Mitgliedschaft (Mobile)" aria-label="M04 — Mitgliedschaft (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m04.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Tarifrechner und Tarifvergleich beider Studios (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+</div>
+</section>
+<section class="cs-section" aria-label="Online-Anmeldung"><span class="cs-section-title" aria-hidden="true">Online-Anmeldung</span>
+<div class="cs-row">
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d05">
+  <figcaption class="cs-label">05 — Anmeldung · Tarif (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d05.webp" data-cs-label="05 — Anmeldung · Tarif (Desktop)" aria-label="05 — Anmeldung · Tarif (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d05.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 1: Studio und Tarif wählen (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m05">
+  <figcaption class="cs-label">M05 — Anmeldung · Tarif (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m05.webp" data-cs-label="M05 — Anmeldung · Tarif (Mobile)" aria-label="M05 — Anmeldung · Tarif (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m05.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 1: Studio und Tarif wählen (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d06">
+  <figcaption class="cs-label">06 — Anmeldung · Daten (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d06.webp" data-cs-label="06 — Anmeldung · Daten (Desktop)" aria-label="06 — Anmeldung · Daten (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d06.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 2: persönliche Daten (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m06">
+  <figcaption class="cs-label">M06 — Anmeldung · Daten (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m06.webp" data-cs-label="M06 — Anmeldung · Daten (Mobile)" aria-label="M06 — Anmeldung · Daten (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m06.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 2: persönliche Daten (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d07">
+  <figcaption class="cs-label">07 — Anmeldung · Bank (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d07.webp" data-cs-label="07 — Anmeldung · Bank (Desktop)" aria-label="07 — Anmeldung · Bank (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d07.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 3: Bankdaten mit geprüfter IBAN (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m07">
+  <figcaption class="cs-label">M07 — Anmeldung · Bank (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m07.webp" data-cs-label="M07 — Anmeldung · Bank (Mobile)" aria-label="M07 — Anmeldung · Bank (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m07.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 3: Bankdaten mit geprüfter IBAN (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d08">
+  <figcaption class="cs-label">08 — Anmeldung · Prüfen (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d08.webp" data-cs-label="08 — Anmeldung · Prüfen (Desktop)" aria-label="08 — Anmeldung · Prüfen (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d08.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 4: Zusammenfassung vor dem Absenden (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m08">
+  <figcaption class="cs-label">M08 — Anmeldung · Prüfen (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m08.webp" data-cs-label="M08 — Anmeldung · Prüfen (Mobile)" aria-label="M08 — Anmeldung · Prüfen (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m08.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 4: Zusammenfassung vor dem Absenden (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop cs-frame--cropped" id="ab-d09">
+  <figcaption class="cs-label">09 — Anmeldung · Erfolg (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d09.webp" data-cs-label="09 — Anmeldung · Erfolg (Desktop)" aria-label="09 — Anmeldung · Erfolg (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d09.webp" width="720" height="1200" loading="lazy" decoding="async" alt="Bestätigung nach der Demo-Anmeldung mit Referenznummer (Desktop, oberer Ausschnitt)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m09">
+  <figcaption class="cs-label">M09 — Anmeldung · Erfolg (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m09.webp" data-cs-label="M09 — Anmeldung · Erfolg (Mobile)" aria-label="M09 — Anmeldung · Erfolg (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m09.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Bestätigung nach der Demo-Anmeldung mit Referenznummer (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+</div>
+</section>
+<section class="cs-section" aria-label="Verwaltung & System"><span class="cs-section-title" aria-hidden="true">Verwaltung & System</span>
+<div class="cs-row">
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop" id="ab-d10">
+  <figcaption class="cs-label">10 — Verwaltung · Liste (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d10.webp" data-cs-label="10 — Verwaltung · Liste (Desktop)" aria-label="10 — Verwaltung · Liste (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d10.webp" width="720" height="961" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Liste der Anmeldungen mit Statuszählern und Filtern (Desktop)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m10">
+  <figcaption class="cs-label">M10 — Verwaltung · Liste (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m10.webp" data-cs-label="M10 — Verwaltung · Liste (Mobile)" aria-label="M10 — Verwaltung · Liste (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m10.webp" width="195" height="933" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Liste der Anmeldungen mit Statuszählern und Filtern (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop" id="ab-d11">
+  <figcaption class="cs-label">11 — Verwaltung · Detail (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d11.webp" data-cs-label="11 — Verwaltung · Detail (Desktop)" aria-label="11 — Verwaltung · Detail (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d11.webp" width="720" height="711" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Detailansicht einer Anmeldung mit Statusablauf (Desktop)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile" id="ab-m11">
+  <figcaption class="cs-label">M11 — Verwaltung · Detail (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m11.webp" data-cs-label="M11 — Verwaltung · Detail (Mobile)" aria-label="M11 — Verwaltung · Detail (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m11.webp" width="195" height="867" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Detailansicht einer Anmeldung mit Statusablauf (Smartphone)">
+  </button>
+</figure>
+</div>
+<div class="cs-pair">
+<figure class="cs-frame cs-frame--desktop" id="ab-d12">
+  <figcaption class="cs-label">12 — 404 (Desktop)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/gibt-es-nicht" data-cs-device="desktop" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-d12.webp" data-cs-label="12 — 404 (Desktop)" aria-label="12 — 404 (Desktop): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-d12.webp" width="720" height="1034" loading="lazy" decoding="async" alt="Fehlerseite 404 (Desktop)">
+  </button>
+</figure>
+<figure class="cs-frame cs-frame--mobile cs-frame--cropped" id="ab-m12">
+  <figcaption class="cs-label">M12 — 404 (Mobile)</figcaption>
+  <button type="button" class="cs-artboard" data-cs-open="https://yellow-alive-prototype.vercel.app/gibt-es-nicht" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m12.webp" data-cs-label="M12 — 404 (Mobile)" aria-label="M12 — 404 (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/canvas-m12.webp" width="195" height="1000" loading="lazy" decoding="async" alt="Fehlerseite 404 (Smartphone, oberer Ausschnitt)">
+  </button>
+</figure>
+</div>
+</div>
+</section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galerie (unter 768 px) -->
+                <div class="md:hidden">
+                    <ul class="-mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4" aria-label="Screens (wischen)">
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M01 — Startseite (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m01.webp" data-cs-label="M01 — Startseite (Mobile)" aria-label="M01 — Startseite (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m01.webp" width="360" height="779" loading="lazy" decoding="async" alt="Startseite mit Studiowahl Linz und Perg, Tarifen und Öffnungszeiten (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M02 — Studio Linz (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/linz" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m02.webp" data-cs-label="M02 — Studio Linz (Mobile)" aria-label="M02 — Studio Linz (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m02.webp" width="360" height="779" loading="lazy" decoding="async" alt="Studioseite Linz mit Galerie, Ausstattung, Öffnungszeiten und Tarifen (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M03 — Studio Perg (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/studios/perg" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m03.webp" data-cs-label="M03 — Studio Perg (Mobile)" aria-label="M03 — Studio Perg (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m03.webp" width="360" height="779" loading="lazy" decoding="async" alt="Studioseite Perg im Petrol-Theme mit Galerie, Ausstattung und Tarifen (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M04 — Mitgliedschaft (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/mitgliedschaft" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m04.webp" data-cs-label="M04 — Mitgliedschaft (Mobile)" aria-label="M04 — Mitgliedschaft (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m04.webp" width="360" height="779" loading="lazy" decoding="async" alt="Tarifrechner und Tarifvergleich beider Studios (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M05 — Anmeldung · Tarif (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m05.webp" data-cs-label="M05 — Anmeldung · Tarif (Mobile)" aria-label="M05 — Anmeldung · Tarif (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m05.webp" width="360" height="779" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 1: Studio und Tarif wählen (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M06 — Anmeldung · Daten (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m06.webp" data-cs-label="M06 — Anmeldung · Daten (Mobile)" aria-label="M06 — Anmeldung · Daten (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m06.webp" width="360" height="779" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 2: persönliche Daten (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M07 — Anmeldung · Bank (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m07.webp" data-cs-label="M07 — Anmeldung · Bank (Mobile)" aria-label="M07 — Anmeldung · Bank (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m07.webp" width="360" height="779" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 3: Bankdaten mit geprüfter IBAN (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M08 — Anmeldung · Prüfen (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m08.webp" data-cs-label="M08 — Anmeldung · Prüfen (Mobile)" aria-label="M08 — Anmeldung · Prüfen (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m08.webp" width="360" height="779" loading="lazy" decoding="async" alt="Online-Anmeldung Schritt 4: Zusammenfassung vor dem Absenden (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M09 — Anmeldung · Erfolg (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/anmeldung" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m09.webp" data-cs-label="M09 — Anmeldung · Erfolg (Mobile)" aria-label="M09 — Anmeldung · Erfolg (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m09.webp" width="360" height="779" loading="lazy" decoding="async" alt="Bestätigung nach der Demo-Anmeldung mit Referenznummer (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M10 — Verwaltung · Liste (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m10.webp" data-cs-label="M10 — Verwaltung · Liste (Mobile)" aria-label="M10 — Verwaltung · Liste (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m10.webp" width="360" height="779" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Liste der Anmeldungen mit Statuszählern und Filtern (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M11 — Verwaltung · Detail (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/admin-demo" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m11.webp" data-cs-label="M11 — Verwaltung · Detail (Mobile)" aria-label="M11 — Verwaltung · Detail (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m11.webp" width="360" height="779" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Detailansicht einer Anmeldung mit Statusablauf (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+<li class="snap-center shrink-0 w-[62%] sm:w-[40%]">
+  <p class="mb-2 text-xs text-slate-400">M12 — 404 (Mobile)</p>
+  <button type="button" class="block w-full overflow-hidden rounded-xl border border-slate-700 bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-orange-500" data-cs-open="https://yellow-alive-prototype.vercel.app/gibt-es-nicht" data-cs-device="mobile" data-cs-thumb="/assets/img/referenzen/fitnessstudio-konzept/thumb-m12.webp" data-cs-label="M12 — 404 (Mobile)" aria-label="M12 — 404 (Mobile): Live-Demo öffnen">
+    <img src="/assets/img/referenzen/fitnessstudio-konzept/thumb-m12.webp" width="360" height="779" loading="lazy" decoding="async" alt="Fehlerseite 404 (Smartphone)" class="block h-auto w-full">
+  </button>
+</li>
+                    </ul>
+                    <p class="mt-2 text-sm text-slate-400">Wischen für weitere Screens. Tippen öffnet die Live-Demo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3 Ausgangslage & Ziel -->
+        <section class="py-20 lg:py-28 bg-slate-950" aria-labelledby="ziel-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+                <div class="lg:col-span-5">
+                    <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Ausgangslage &amp; Ziel</p>
+                    <h2 id="ziel-titel" class="text-3xl md:text-5xl font-bold text-white">Zwei Marken, ein Weg zur Mitgliedschaft.</h2>
+                </div>
+                <div class="lg:col-span-7 space-y-6 text-lg text-slate-300 leading-relaxed">
+                    <p>Yellow Fitness in Linz und Alive in Perg sind zwei eigenständige Studiomarken mit je eigener WordPress-Website; die Online-Anmeldung läuft über ein Formular und E-Mail.</p>
+                    <p>Die Studie zeigt, wie beide Marken auf einem gemeinsamen Designsystem aufbauen können, ohne ihre Eigenständigkeit aufzugeben. Interessierte sollen ihr Studio und den passenden Tarif in wenigen Klicks finden, Preise direkt vergleichen und die Mitgliedschaft vollständig online abschließen. Dazu kommt eine schlanke Verwaltung der eingehenden Anmeldungen.</p>
+                    <ul class="grid sm:grid-cols-3 gap-4 pt-2 text-base">
+                        <li class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><span class="block text-orange-500 font-bold mb-1">01</span>Studiowahl ohne Umweg</li>
+                        <li class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><span class="block text-orange-500 font-bold mb-1">02</span>Tarife transparent vergleichen</li>
+                        <li class="rounded-2xl border border-slate-800 bg-slate-900 p-5"><span class="block text-orange-500 font-bold mb-1">03</span>Anmeldung komplett online</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 Designsystem -->
+        <section class="py-20 lg:py-28 bg-slate-900 border-y border-white/5" aria-labelledby="system-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mb-12">
+                    <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Designsystem</p>
+                    <h2 id="system-titel" class="text-3xl md:text-5xl font-bold text-white mb-4">Ein Token-Set, zwei Themes.</h2>
+                    <p class="text-slate-300 text-lg">Alle Komponenten nutzen dieselben semantischen Tokens. Ein Attribut pro Bereich schaltet Akzentfarbe und Bühne um: Gelb auf Schwarz für Linz, Lime auf Petrol für Perg.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6">
+                        <h3 class="text-white font-bold mb-4">Yellow Fitness Linz</h3>
+                        <ul class="grid grid-cols-3 gap-3 text-xs">
+                            <li><span class="block h-20 rounded-lg" style="background:#fcc000"></span><span class="mt-2 block text-white">Gelb</span><span class="font-mono text-slate-500">#FCC000</span></li>
+                            <li><span class="block h-20 rounded-lg border border-slate-700" style="background:#0e0f0f"></span><span class="mt-2 block text-white">Ink</span><span class="font-mono text-slate-500">#0E0F0F</span></li>
+                            <li><span class="block h-20 rounded-lg" style="background:#f2f0ea"></span><span class="mt-2 block text-white">Chalk</span><span class="font-mono text-slate-500">#F2F0EA</span></li>
+                        </ul>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6">
+                        <h3 class="text-white font-bold mb-4">Alive Perg</h3>
+                        <ul class="grid grid-cols-3 gap-3 text-xs">
+                            <li><span class="block h-20 rounded-lg" style="background:#d3d800"></span><span class="mt-2 block text-white">Lime</span><span class="font-mono text-slate-500">#D3D800</span></li>
+                            <li><span class="block h-20 rounded-lg" style="background:#00465b"></span><span class="mt-2 block text-white">Petrol</span><span class="font-mono text-slate-500">#00465B</span></li>
+                            <li><span class="block h-20 rounded-lg" style="background:#02303e"></span><span class="mt-2 block text-white">Petrol tief</span><span class="font-mono text-slate-500">#02303E</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-6 grid lg:grid-cols-3 gap-6">
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Display</p>
+                        <p class="font-anton text-5xl text-white uppercase leading-none mt-3">Zwei Studios.</p>
+                        <p class="mt-3 text-sm text-slate-400">Anton – Headline-Schrift von Yellow</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Text</p>
+                        <p class="font-reddit text-2xl text-white mt-3 leading-snug">Trainieren, wann es in deinen Tag passt.</p>
+                        <p class="mt-3 text-sm text-slate-400">Reddit Sans – Hausschrift von Alive</p>
+                    </div>
+                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-6">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Labels &amp; Daten</p>
+                        <p class="font-reddit-mono text-lg text-white mt-3 uppercase tracking-widest">Täglich 06:00–23:00</p>
+                        <p class="mt-3 text-sm text-slate-400">Reddit Mono – Zeiten, Preise, Status</p>
+                    </div>
+                </div>
+
+                <div class="mt-6 rounded-2xl border border-slate-800 p-6 md:p-8" style="background:#0e0f0f">
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold mb-6">Komponenten</p>
+                    <div class="flex flex-wrap items-center gap-4 font-reddit">
+                        <span class="inline-flex h-12 items-center gap-2 px-6 text-sm font-semibold uppercase tracking-[0.06em]" style="background:#fcc000;color:#0e0f0f">Probetraining →</span>
+                        <span class="inline-flex h-12 items-center px-6 text-sm font-semibold uppercase tracking-[0.06em] border text-white">Tarife Linz</span>
+                        <span class="inline-flex h-12 items-center gap-2 px-6 text-sm font-semibold uppercase tracking-[0.06em]" style="background:#d3d800;color:#02303e">Studio Perg →</span>
+                        <span class="font-reddit-mono inline-flex h-7 items-center gap-2 rounded-full border border-dashed border-slate-500 px-3 text-xs uppercase tracking-wider text-slate-400"><span class="h-1.5 w-1.5 rounded-full" style="background:#fcc000"></span>Demo</span>
+                        <span class="font-reddit-mono inline-flex h-7 items-center rounded-full px-3 text-xs uppercase tracking-wider" style="background:#fcc000;color:#0e0f0f">Neu</span>
+                        <span class="text-white"><span class="font-anton text-4xl">59</span><span class="font-anton text-xl align-top">90 €</span><span class="font-reddit-mono ml-2 text-xs uppercase text-slate-400">/ Monat</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5 Online-Anmeldung -->
+        <section class="py-20 lg:py-28 bg-slate-950" aria-labelledby="anmeldung-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mb-12">
+                    <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Online-Anmeldung</p>
+                    <h2 id="anmeldung-titel" class="text-3xl md:text-5xl font-bold text-white mb-4">Vom Tarif zum Vertrag in vier Schritten.</h2>
+                    <p class="text-slate-300 text-lg">Mobil zuerst gedacht: Auswahl immer sichtbar, Fehler direkt am Feld, nichts geht verloren beim Zurückspringen.</p>
+                </div>
+                <ol class="-mx-4 flex snap-x snap-mandatory gap-6 overflow-x-auto px-4 pb-4 lg:mx-0 lg:grid lg:grid-cols-4 lg:overflow-visible lg:px-0">
+                    <li class="snap-start shrink-0 w-[72%] sm:w-[45%] lg:w-auto list-none">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/flow-1.webp" width="540" height="1169" loading="lazy" decoding="async" alt="Schritt 1 am Smartphone: Studio Linz und Tarif Halbzeit Abo gewählt, Auswahl oben zusammengefasst" class="w-full h-auto rounded-2xl border border-slate-800">
+                        <h3 class="mt-5 text-white font-bold"><span class="text-orange-500">1</span> Tarif-Logik</h3>
+                        <p class="mt-2 text-slate-300 text-sm leading-relaxed">Studio wählen, nur passende Tarife erscheinen. Ermäßigung schaltet alle Preise live um. Aus dem Tarifrechner kommt die Auswahl schon vorbelegt.</p>
+                    </li>
+                    <li class="snap-start shrink-0 w-[72%] sm:w-[45%] lg:w-auto list-none">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/flow-2.webp" width="540" height="1169" loading="lazy" decoding="async" alt="Schritt 2 am Smartphone: Formular für Anrede, Name und Geburtsdatum" class="w-full h-auto rounded-2xl border border-slate-800">
+                        <h3 class="mt-5 text-white font-bold"><span class="text-orange-500">2</span> Erziehungsberechtigte unter 18</h3>
+                        <p class="mt-2 text-slate-300 text-sm leading-relaxed">Das Geburtsdatum steuert den Ablauf: unter 14 keine Anmeldung, unter 18 erscheinen Felder für eine erziehungsberechtigte Person.</p>
+                    </li>
+                    <li class="snap-start shrink-0 w-[72%] sm:w-[45%] lg:w-auto list-none">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/flow-3.webp" width="540" height="1169" loading="lazy" decoding="async" alt="Schritt 3 am Smartphone: Bankdaten mit grün bestätigter IBAN" class="w-full h-auto rounded-2xl border border-slate-800">
+                        <h3 class="mt-5 text-white font-bold"><span class="text-orange-500">3</span> IBAN-Prüfung</h3>
+                        <p class="mt-2 text-slate-300 text-sm leading-relaxed">Länge und Prüfziffer nach ISO 13616 werden direkt im Browser geprüft, mit verständlicher Fehlermeldung. Die BIC ist für Konten aus Österreich und Deutschland optional.</p>
+                    </li>
+                    <li class="snap-start shrink-0 w-[72%] sm:w-[45%] lg:w-auto list-none">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/flow-4.webp" width="540" height="1169" loading="lazy" decoding="async" alt="Schritt 4 am Smartphone: Zusammenfassung aller Angaben mit Bearbeiten-Links" class="w-full h-auto rounded-2xl border border-slate-800">
+                        <h3 class="mt-5 text-white font-bold"><span class="text-orange-500">4</span> Zusammenfassung</h3>
+                        <p class="mt-2 text-slate-300 text-sm leading-relaxed">Alle Angaben auf einen Blick, die IBAN maskiert. „Bearbeiten“ springt in den Schritt und danach direkt zurück zur Übersicht.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 6 Verwaltung -->
+        <section class="py-20 lg:py-28 bg-slate-900 border-y border-white/5" aria-labelledby="verwaltung-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 items-start">
+                    <div class="lg:col-span-4">
+                        <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Verwaltung</p>
+                        <h2 id="verwaltung-titel" class="text-3xl md:text-5xl font-bold text-white mb-6">Anmeldungen, die nicht im Postfach liegen bleiben.</h2>
+                        <ul class="space-y-5 text-slate-300">
+                            <li><strong class="block text-white">Status-Workflow</strong>Neu → In Bearbeitung → Angelegt → Chip ausgegeben, mit Zählern pro Status.</li>
+                            <li><strong class="block text-white">Filter &amp; Suche</strong>Nach Studio, Tarif, Status und Zeitraum, dazu Suche nach Name oder E-Mail und CSV-Export.</li>
+                            <li><strong class="block text-white">Detailansicht</strong>Alle Vertragsdaten, IBAN maskiert, Erziehungsberechtigte bei Minderjährigen, interne Notiz.</li>
+                        </ul>
+                        <p class="mt-6 text-sm text-slate-500">Demo mit erfundenen Beispieldaten.</p>
+                    </div>
+                    <div class="lg:col-span-8 space-y-6">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/admin-liste-1440.webp" srcset="/assets/img/referenzen/fitnessstudio-konzept/admin-liste-960.webp 960w, /assets/img/referenzen/fitnessstudio-konzept/admin-liste-1440.webp 1440w" sizes="(min-width: 1024px) 800px, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Verwaltungs-Demo: Seitenleiste, Statuszähler, Filter und Liste der Anmeldungen" class="w-full h-auto rounded-xl border border-slate-700 shadow-2xl">
+                        <img src="/assets/img/referenzen/fitnessstudio-konzept/admin-detail-1440.webp" srcset="/assets/img/referenzen/fitnessstudio-konzept/admin-detail-960.webp 960w, /assets/img/referenzen/fitnessstudio-konzept/admin-detail-1440.webp 1440w" sizes="(min-width: 1024px) 800px, 100vw" width="1440" height="900" loading="lazy" decoding="async" alt="Verwaltungs-Demo: geöffnete Detailansicht mit Statusleiste und Button „Nächster Schritt“" class="w-full h-auto rounded-xl border border-slate-700 shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7 Live-Demo + 8 Leistungen -->
+        <section class="py-20 lg:py-28 bg-slate-950" aria-labelledby="leistung-titel">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mb-12">
+                    <p class="text-xs font-semibold tracking-wider text-orange-500 uppercase mb-3">Was ich gemacht habe</p>
+                    <h2 id="leistung-titel" class="text-3xl md:text-5xl font-bold text-white">Von der Analyse bis zum klickbaren Prototyp.</h2>
+                </div>
+                <ol class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                    <li class="list-none rounded-2xl border border-slate-800 bg-slate-900 p-6"><span class="text-orange-500 font-bold">01</span><h3 class="mt-2 text-white font-bold">Analyse</h3><p class="mt-2 text-sm text-slate-300">Inhalte, Tarife und Abläufe beider Studios strukturiert erfasst.</p></li>
+                    <li class="list-none rounded-2xl border border-slate-800 bg-slate-900 p-6"><span class="text-orange-500 font-bold">02</span><h3 class="mt-2 text-white font-bold">Konzept</h3><p class="mt-2 text-sm text-slate-300">Informationsarchitektur, Studios als Daten statt doppelter Seiten.</p></li>
+                    <li class="list-none rounded-2xl border border-slate-800 bg-slate-900 p-6"><span class="text-orange-500 font-bold">03</span><h3 class="mt-2 text-white font-bold">UX/UI</h3><p class="mt-2 text-sm text-slate-300">Designsystem mit zwei Themes, mobile-first, WCAG 2.1 AA als Ziel.</p></li>
+                    <li class="list-none rounded-2xl border border-slate-800 bg-slate-900 p-6"><span class="text-orange-500 font-bold">04</span><h3 class="mt-2 text-white font-bold">Frontend</h3><p class="mt-2 text-sm text-slate-300">Next.js mit Server Components, statisch vorgerendert, Tests für Tarif-, Alters- und IBAN-Logik.</p></li>
+                    <li class="list-none rounded-2xl border border-slate-800 bg-slate-900 p-6"><span class="text-orange-500 font-bold">05</span><h3 class="mt-2 text-white font-bold">Prototyp</h3><p class="mt-2 text-sm text-slate-300">Klickbare Anmeldung und Verwaltung, ohne echte Datenübertragung.</p></li>
+                </ol>
+
+                <div class="mt-12 flex flex-col md:flex-row md:items-center justify-between gap-6 rounded-2xl border border-orange-500/30 bg-orange-500/10 p-6 md:p-8">
+                    <div>
+                        <p class="text-white font-bold text-xl">Selbst durchklicken</p>
+                        <p class="text-slate-300 mt-1">Demo mit Beispieldaten, keine Funktion: Es werden keine Daten gesendet oder gespeichert.</p>
+                    </div>
+                    <a href="https://yellow-alive-prototype.vercel.app/" target="_blank" rel="noopener" class="inline-flex shrink-0 justify-center items-center gap-2 px-7 py-3.5 font-bold rounded-full text-white bg-orange-600 hover:bg-orange-500 transition">
+                        Interaktive Demo öffnen
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5h5v5M19 5l-8 8M5 7v12h12"></path></svg>
+                        <span class="sr-only">(neuer Tab)</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9 CTA -->
+        <section class="py-24 relative bg-slate-950 border-t border-white/5" aria-labelledby="cta-titel">
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-950 to-indigo-950/20" aria-hidden="true"></div>
+            <div class="max-w-3xl mx-auto px-4 relative z-10 text-center">
+                <h2 id="cta-titel" class="text-3xl md:text-5xl font-bold text-white mb-4">Ähnliches Projekt? Lassen Sie uns reden.</h2>
+                <p class="text-slate-300 text-lg mb-10">Online-Anmeldung, Tarifrechner oder ein Designsystem für mehrere Marken und Standorte: Ich melde mich innerhalb von 24 Stunden mit einer ersten Einschätzung.</p>
+                <a href="/#kontakt" class="inline-flex justify-center items-center px-8 py-4 text-base font-bold rounded-full text-white bg-gradient-to-r from-orange-600 to-amber-600 hover:shadow-[0_0_30px_rgba(234,88,12,0.4)] transition-all duration-300">Kostenloses Erstgespräch sichern</a>
+                <p class="mt-6 text-slate-500">oder direkt per E-Mail: <a href="mailto:kontakt@bergmair-digital.at" class="text-white font-semibold hover:text-orange-500 transition">kontakt@bergmair-digital.at</a></p>
+            </div>
+        </section>
+
+        <!-- 10 Bildnachweis -->
+        <section class="bg-slate-950 border-t border-slate-900 py-8" aria-label="Hinweise">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-slate-500 space-y-1">
+                <p>Fotos und Logos: Yellow Fitness OG / ALIVE OG, mit freundlicher Genehmigung.</p>
+                <p>Konzeptstudie. Die gezeigten Entwürfe sind keine offizielle Website der Studios; Preise und Inhalte dienen nur der Darstellung.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-slate-500">&copy; 2026 Bergmair.Digital Webentwicklung.</div>
+            <div class="flex items-center gap-8">
+                <a href="/pages/impressum.html" class="text-slate-200 hover:text-white transition">Impressum</a>
+                <a href="/pages/datenschutz.html" class="text-slate-200 hover:text-white transition">Datenschutz</a>
+                <a href="/pages/agb.html" class="text-slate-200 hover:text-white transition">AGB</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Live-Vorschau -->
+    <dialog id="cs-preview" class="cs-dialog" aria-labelledby="cs-preview-title">
+        <div class="flex h-full w-full flex-col items-center justify-center gap-3 p-4">
+            <div class="flex w-full max-w-[1280px] items-center justify-between gap-4 text-white">
+                <p id="cs-preview-title" class="truncate text-sm font-semibold" data-cs-preview-title>Live-Demo</p>
+                <div class="flex shrink-0 items-center gap-2">
+                    <a data-cs-preview-external href="https://yellow-alive-prototype.vercel.app/" target="_blank" rel="noopener" class="inline-flex h-10 items-center gap-2 rounded-full bg-orange-600 px-4 text-sm font-bold text-white hover:bg-orange-500 transition">In neuem Tab öffnen<svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M5 7v12h12"/></svg></a>
+                    <form method="dialog"><button autofocus class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-600 text-white hover:bg-white/10" aria-label="Vorschau schließen (Escape)"><svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></form>
+                </div>
+            </div>
+            <div data-cs-browser class="flex w-full max-w-[1280px] flex-1 min-h-0 flex-col overflow-hidden rounded-xl border-4 border-slate-800 bg-slate-900 shadow-2xl">
+                <div class="flex shrink-0 items-center gap-4 border-b border-slate-800 bg-slate-950 px-4 py-2.5">
+                    <div class="flex gap-2" aria-hidden="true"><span class="h-3 w-3 rounded-full bg-slate-700"></span><span class="h-3 w-3 rounded-full bg-slate-700"></span><span class="h-3 w-3 rounded-full bg-slate-700"></span></div>
+                    <span class="truncate rounded-full border border-slate-800 bg-slate-900 px-3 py-1 text-xs text-slate-400" data-cs-preview-url>yellow-alive-prototype.vercel.app</span>
+                </div>
+                <div class="relative min-h-0 flex-1 bg-[#0e0f0f]">
+                    <img data-cs-placeholder alt="" class="absolute inset-0 h-full w-full object-cover object-top">
+                    <iframe class="absolute inset-0 h-full w-full opacity-0 transition-opacity duration-300" src="about:blank" title="Live-Demo" referrerpolicy="no-referrer"></iframe>
+                    <p data-cs-loading class="absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 rounded-full bg-slate-950/85 px-4 py-2 text-xs font-semibold text-white shadow-lg backdrop-blur" role="status"><span class="h-3 w-3 animate-spin rounded-full border-2 border-orange-500 border-t-transparent motion-reduce:animate-none" aria-hidden="true"></span>Live-Demo lädt …</p>
+                </div>
+            </div>
+            <div data-cs-phone hidden class="cs-phone overflow-hidden rounded-[2.5rem] border-[10px] border-slate-800 bg-slate-900 shadow-2xl">
+                <div class="relative h-full w-full bg-[#0e0f0f]">
+                    <img data-cs-placeholder alt="" class="absolute inset-0 h-full w-full object-cover object-top">
+                    <iframe class="absolute inset-0 h-full w-full opacity-0 transition-opacity duration-300" src="about:blank" title="Live-Demo" referrerpolicy="no-referrer"></iframe>
+                    <p data-cs-loading class="absolute bottom-4 left-1/2 -translate-x-1/2 inline-flex items-center gap-2 rounded-full bg-slate-950/85 px-4 py-2 text-xs font-semibold text-white shadow-lg backdrop-blur" role="status"><span class="h-3 w-3 animate-spin rounded-full border-2 border-orange-500 border-t-transparent motion-reduce:animate-none" aria-hidden="true"></span>Live-Demo lädt …</p>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="/assets/js/case-study.js" defer></script>
+    <script data-goatcounter="https://bergmair-digital.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+    <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

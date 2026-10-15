@@ -1,0 +1,205 @@
+/* Fallstudie: Editor-Leinwand und Typo-Proben. Ergänzt Tailwind (CDN) auf /referenzen/*. */
+
+@font-face {
+  font-family: "Anton Specimen";
+  src: url("../fonts/case/anton-latin.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reddit Sans Specimen";
+  src: url("../fonts/case/reddit-sans-latin-var.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Reddit Mono Specimen";
+  src: url("../fonts/case/reddit-mono-latin-var.woff2") format("woff2");
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+.font-anton { font-family: "Anton Specimen", Impact, sans-serif; letter-spacing: 0.01em; }
+.font-reddit { font-family: "Reddit Sans Specimen", system-ui, sans-serif; }
+.font-reddit-mono { font-family: "Reddit Mono Specimen", ui-monospace, monospace; }
+
+/* ---------- Editor ---------- */
+
+.cs-viewport {
+  position: relative;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  background-color: #0b1020;
+  background-image: radial-gradient(rgba(148, 163, 184, 0.22) 1px, transparent 1.2px);
+  background-size: 24px 24px;
+  outline: none;
+}
+
+.cs-viewport.is-dragging { cursor: grabbing; }
+.cs-viewport.is-dragging .cs-artboard { cursor: grabbing; }
+.cs-viewport:focus-visible { box-shadow: inset 0 0 0 2px #f97316; }
+
+.cs-world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  /* Inverse zoom, set by JS: labels keep their on-screen size like in a design tool. */
+  --iz: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 360px;
+  padding: 120px;
+}
+
+.cs-section {
+  position: relative;
+  padding: 140px 120px 120px;
+  border-radius: calc(10px * var(--iz));
+  background: rgba(30, 41, 59, 0.35);
+  border: calc(1px * var(--iz)) solid rgba(148, 163, 184, 0.18);
+  width: max-content;
+}
+
+.cs-section-title {
+  position: absolute;
+  top: calc(-30px * var(--iz));
+  left: 0;
+  font-size: calc(13px * var(--iz));
+  line-height: 1;
+  padding: calc(6px * var(--iz)) calc(10px * var(--iz));
+  border-radius: calc(5px * var(--iz));
+  background: #1e293b;
+  color: #e2e8f0;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cs-row { display: flex; align-items: flex-start; gap: 400px; }
+.cs-pair { display: flex; align-items: flex-start; gap: 80px; }
+
+.cs-frame { position: relative; margin: 0; }
+
+.cs-label {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  /* Labels may run into the gap next to their frame, only then are they truncated. */
+  right: -80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: calc(8px * var(--iz));
+  font-size: calc(11px * var(--iz));
+  line-height: 1.2;
+  color: #94a3b8;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-artboard {
+  display: block;
+  /* Without an explicit width the button shrinks to its (not yet loaded) lazy image: 0 px. */
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: #0e0f0f;
+  cursor: zoom-in;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 12px 40px -12px rgba(0, 0, 0, 0.6);
+  outline: calc(1px * var(--iz)) solid rgba(148, 163, 184, 0.15);
+  transition: outline-color 0.15s ease;
+}
+
+.cs-artboard img { display: block; width: 100%; height: auto; pointer-events: none; user-select: none; }
+.cs-artboard:hover,
+.cs-artboard:focus-visible { outline: calc(2px * var(--iz)) solid #f97316; }
+
+.cs-frame--desktop { width: 720px; }
+.cs-frame--mobile { width: 195px; }
+.cs-frame--mobile .cs-label { right: -400px; }
+
+/* Long pages show only their top part on the canvas, softly faded out. */
+.cs-frame--cropped .cs-artboard { background: transparent; }
+.cs-frame--cropped .cs-artboard img {
+  -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent);
+  mask-image: linear-gradient(to bottom, #000 82%, transparent);
+}
+
+.cs-layer[aria-current="true"] { background: rgba(249, 115, 22, 0.12); color: #fff; }
+.cs-layer[aria-current="true"] .cs-layer-icon { color: #fb923c; }
+
+/* ---------- Vorschau-Dialog ---------- */
+
+.cs-dialog {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.cs-dialog::backdrop { background: rgba(2, 6, 23, 0.85); backdrop-filter: blur(4px); }
+.cs-dialog[open] { display: flex; align-items: center; justify-content: center; }
+
+.cs-phone {
+  width: min(390px, calc((100dvh - 9rem) * 390 / 844), calc(100vw - 2rem));
+  aspect-ratio: 390 / 844;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-world { transition: none !important; }
+}
+
+/* ---------- Fallstudien-Bausteine (Worbis, J4K) ---------- */
+
+/* Reveal: nur mit JS versteckt, ohne JS oder bei Fehler bleibt alles sichtbar */
+.js .cs-reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition-delay: var(--cs-delay, 0ms);
+}
+.js .cs-reveal.is-visible,
+.js.cs-reveal-all .cs-reveal { opacity: 1; transform: none; }
+
+/* Browser-Mockup und Smartphone-Rahmen */
+.cs-browser { box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.04); }
+.cs-phone-frame {
+  aspect-ratio: 390 / 844;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.75), 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+.cs-phone-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+
+/* Komposition: Browser mit überlappendem Smartphone */
+.cs-compose { position: relative; }
+.cs-compose-phone { width: 34%; max-width: 200px; margin: -3.5rem 0 0 auto; position: relative; z-index: 2; }
+@media (min-width: 1024px) {
+  .cs-compose-phone { position: absolute; right: -2.5rem; bottom: -3rem; margin: 0; width: 22%; max-width: 230px; }
+}
+
+/* Horizontaler Snap-Scroll für Smartphone-Reihen */
+.cs-snap { display: flex; gap: 1.25rem; overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 1rem; -webkit-overflow-scrolling: touch; }
+.cs-snap > * { flex: 0 0 min(72vw, 260px); scroll-snap-align: center; }
+@media (min-width: 1024px) {
+  .cs-snap { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); overflow: visible; max-width: 54rem; margin-inline: auto; gap: 2.5rem; }
+  .cs-snap--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: 72rem; }
+  .cs-snap > * { flex: none; }
+}
+
+/* Cineastischer Hero-Einstieg (J4K) */
+@keyframes cs-hero-in { from { opacity: 0; transform: scale(1.06); } to { opacity: 1; transform: scale(1); } }
+.cs-hero-in { animation: cs-hero-in 1.4s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.cs-glow-orange { box-shadow: 0 40px 120px -30px rgba(234, 88, 12, 0.35), 0 30px 80px -20px rgba(0, 0, 0, 0.8); }
+
+/* Detail-Bild mit weichem Rahmen */
+.cs-shot { box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.7); }
+
+@media (prefers-reduced-motion: reduce) {
+  .js .cs-reveal { opacity: 1; transform: none; transition: none; }
+  .cs-hero-in { animation: none; }
+}
